@@ -52,17 +52,6 @@ h3{
 
 }
 
-@each $textos in texto1, texto2, texto3, texto4 {
-    .#{$textos}{
-        display: block;
-        font-size: 5rem;
-        color: red;
-    }
-
-    @for $i from 1 to 5 {
-        .pruebas-#{$i} {font-size:1rem*$i;} 
-    }
-}
 
 .parrafos {
     display: block;
@@ -136,6 +125,12 @@ p{
                 }
             }
                 
+            }
+            &__button{
+                display: block;
+                width: 1rem;
+                height: 4px;
+                color: aqua;
             }
         }
 }
@@ -241,6 +236,7 @@ div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 
     &__subTitulos{
         display: block;
@@ -261,6 +257,7 @@ div{
         display: flex;
         width: 40vw;
         padding-bottom: 2rem;
+        padding-top: 2rem;
         
         -webkit-animation: contenedor__presentacion__imagen 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
         animation: contenedor__presentacion__imagen 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -372,7 +369,7 @@ input {
     display: block;
     padding: 10px;
     margin: 10px 0px 10px;
-    width: 350px;
+    width: 100%;
     border-radius: 5px;
 
 }
@@ -419,11 +416,14 @@ input {
 .contenedor__formularios{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
 
     &__datos {
         position: relative;
         flex-direction: column;
-        width: 350px;
+        width: 100%;
 
         &__encabezados{
             font-family: sans-serif;
@@ -458,7 +458,7 @@ input {
 
 
 
- @media only screen and (max-width:800px) {
+ @media only screen and (max-width:900px) {
 
    .menuPrincipal>li{
        display: block;
@@ -474,10 +474,17 @@ input {
        justify-content: center;
        align-items: center;
    }
-   .footerTitles{
+   .footer__titles{
        display: flex;
        flex-direction: row;
        justify-content: center;
+   }
+
+   .contenedor__presentacion__parrafo{
+       width: 100%;
+   }
+   .contenedor__presentacion__imagen{
+       width: 100%;
    }
  }
 
@@ -502,6 +509,15 @@ input {
         border-width: 2rem;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .contenedor__formularios{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .header__menuPrincipal{
+        display: none;
     }
 }
 
