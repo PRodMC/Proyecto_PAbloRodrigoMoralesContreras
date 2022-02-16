@@ -106,6 +106,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logoIndex {
@@ -136,15 +139,23 @@ p {
   padding: 10px 10px;
 }
 
-.header__menuPrincipal li a :hover {
-  color: #e7e7e7;
+.header__menuPrincipal__button {
+  display: none;
+  width: 2rem;
+  height: 2rem;
 }
 
-.header__menuPrincipal__button {
-  display: block;
-  width: 1rem;
-  height: 4px;
-  color: aqua;
+.header__menuPrincipal__button__desplegable {
+  display: none;
+  width: 5rem;
+}
+
+.btn-group, .dropstart {
+  display: none;
+}
+
+.header__menuPrincipal li a:hover {
+  color: black;
 }
 
 div {
@@ -442,10 +453,6 @@ input {
   margin: 5px;
 }
 
-.datosContacto:hover {
-  color: saddlebrown;
-}
-
 .contactItem19 {
   display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
@@ -604,6 +611,12 @@ input {
   }
   .header__menuPrincipal {
     display: none;
+  }
+  .header__menuPrincipal__button {
+    display: block;
+  }
+  .btn-group, .dropstart {
+    display: block;
   }
 }
 
