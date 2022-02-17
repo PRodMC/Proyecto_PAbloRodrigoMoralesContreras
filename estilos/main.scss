@@ -536,8 +536,18 @@ input {
                 display: block;
             }  
 
-
-        }
+            .entradasBlog {
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+                grid-template-columns: 1fr;
+                grid-template-areas: "entrada1"
+                                    "entrada2"
+                                    "entrada3"
+                                    "entrada4"
+                                    "entrada5"
+                                    "entrada6";
+            }
+}
   
 
 

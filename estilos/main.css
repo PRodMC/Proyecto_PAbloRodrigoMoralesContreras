@@ -618,6 +618,15 @@ input {
   .btn-group, .dropstart {
     display: block;
   }
+  .entradasBlog {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "entrada1" "entrada2" "entrada3" "entrada4" "entrada5" "entrada6";
+  }
 }
 
 @-webkit-keyframes shimmy {
