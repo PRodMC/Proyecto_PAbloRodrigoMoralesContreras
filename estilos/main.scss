@@ -195,19 +195,23 @@ div{
     align-items: center;
     flex-direction: row;
     align-content: space-around;
-    padding: 10px 0px 200px;
+    padding: 10px 10px 200px;
 
     &__especialidades {
         display: inline-block;
         width: 250px;
         text-align: justify;
-        padding: 10px 0px 15px;
+        padding: 10px 10px 15px;
     }
     &__encabezados{
         font-family: sans-serif;
         color: saddlebrown;
         padding: 15px 0px;
         display: block;
+    }
+    &__imagenes{
+        width: 30%;
+        margin: 1rem 1rem;
     }
 }
 
@@ -547,6 +551,10 @@ input {
                                     "entrada5"
                                     "entrada6";
             }
+
+    .servicios_imagenes{
+        width: 50%;
+    }
 }
   
 

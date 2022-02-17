@@ -211,14 +211,14 @@ div {
           flex-direction: row;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  padding: 10px 0px 200px;
+  padding: 10px 10px 200px;
 }
 
 .servicios__especialidades {
   display: inline-block;
   width: 250px;
   text-align: justify;
-  padding: 10px 0px 15px;
+  padding: 10px 10px 15px;
 }
 
 .servicios__encabezados {
@@ -226,6 +226,11 @@ div {
   color: saddlebrown;
   padding: 15px 0px;
   display: block;
+}
+
+.servicios__imagenes {
+  width: 30%;
+  margin: 1rem 1rem;
 }
 
 .footer {
@@ -626,6 +631,9 @@ input {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
         grid-template-areas: "entrada1" "entrada2" "entrada3" "entrada4" "entrada5" "entrada6";
+  }
+  .servicios_imagenes {
+    width: 50%;
   }
 }
 
