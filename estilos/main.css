@@ -231,6 +231,20 @@ div {
 .servicios__imagenes {
   width: 30%;
   margin: 1rem 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.servicios:hover {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: scale(1.15, 1.15);
+          transform: scale(1.15, 1.15);
+  opacity: 1;
+}
+
+.servicios:hover span {
+  opacity: 0;
 }
 
 .footer {
@@ -261,8 +275,8 @@ div {
   color: #7F7F7F;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
-  line-height: 15px;
-  font-size: 10px;
+  line-height: 1rem;
+  font-size: 1rem;
 }
 
 .footer__parrafos__padding {
@@ -273,7 +287,7 @@ div {
   display: block;
   font-family: sans-serif;
   color: saddlebrown;
-  font-size: 15px;
+  font-size: 1rem;
   letter-spacing: 2px;
 }
 
@@ -296,7 +310,7 @@ div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px 20px;
+  padding: 40px 0px 20px;
   color: #424242;
   font-family: sans-serif;
   line-height: 50px;
@@ -305,7 +319,7 @@ div {
 
 .contenedor__presentacion__parrafo {
   display: block;
-  width: 40vw;
+  width: 30vw;
   text-align: justify;
 }
 
@@ -313,7 +327,7 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40vw;
+  width: 30vw;
   padding-bottom: 2rem;
   padding-top: 2rem;
   -webkit-animation: contenedor__presentacion__imagen 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -325,20 +339,8 @@ div {
   animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-.contenedor__grid {
-  display: -ms-grid;
-  display: grid;
-  height: 10rem;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "entrada1 entrada2 entrada2" "entrada1 entrada3 entrada4" "entrada5 entrada6 entrada4";
-}
-
 .contenedor__entrada1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: entrada1;
   border: solid black 1px;
@@ -349,7 +351,6 @@ div {
 .contenedor__entrada2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: entrada2;
   border: solid black 1px;
   padding: 1rem;
@@ -357,8 +358,8 @@ div {
 }
 
 .contenedor__entrada3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: entrada3;
   border: solid black 1px;
   padding: 1rem;
@@ -367,8 +368,7 @@ div {
 
 .contenedor__entrada4 {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 1;
   grid-area: entrada4;
   border: solid black 1px;
   padding: 1rem;
@@ -376,8 +376,8 @@ div {
 }
 
 .contenedor__entrada5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: entrada5;
   border: solid black 1px;
   padding: 1rem;
@@ -385,8 +385,8 @@ div {
 }
 
 .contenedor__entrada6 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: entrada6;
   border: solid black 1px;
   padding: 1rem;
@@ -396,11 +396,11 @@ div {
 .entradasBlog {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "entrada1 entrada2 entrada2" "entrada1 entrada3 entrada4" "entrada5 entrada6 entrada4";
+      grid-template-areas: "entrada1 entrada2 entrada3" "entrada4 entrada5 entrada6";
 }
 
 .container {

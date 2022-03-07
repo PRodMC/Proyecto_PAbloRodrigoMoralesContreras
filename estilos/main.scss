@@ -212,8 +212,22 @@ div{
     &__imagenes{
         width: 30%;
         margin: 1rem 1rem;
+        transition: all 1s;
+    }
+
+
+      &:hover{
+        backface-visibility: hidden;
+        transform: scale(1.15, 1.15);
+        opacity: 1;
+        
+        span{
+          opacity: 0;
+        }
     }
 }
+
+
 
 .footer{
     display: flex;
@@ -231,8 +245,8 @@ div{
         color: #7F7F7F;
         font-family: Arial, Helvetica, sans-serif;
         letter-spacing: 2px;
-        line-height: 15px;
-        font-size: 10px; 
+        line-height: 1rem;
+        font-size: 1rem; 
 
         &__padding{
             padding-top: 15px;
@@ -243,7 +257,7 @@ div{
         display: block;
         font-family: sans-serif;
         color: saddlebrown;
-        font-size: 15px;
+        font-size: 1rem;
         letter-spacing: 2px;
     }
 }
@@ -257,7 +271,7 @@ div{
     &__subTitulos{
         display: block;
         align-items: center;
-        padding: 20px 0px 20px;
+        padding: 40px 0px 20px;
         color: rgb(66, 66, 66);
         font-family:sans-serif;
         line-height: 50px;
@@ -266,12 +280,12 @@ div{
 
     &__parrafo{
         display: block;
-        width: 40vw;
+        width: 30vw;
         text-align: justify;
         }
     &__imagen{
         display: flex;
-        width: 40vw;
+        width: 30vw;
         padding-bottom: 2rem;
         padding-top: 2rem;
         
@@ -287,15 +301,6 @@ div{
 
 .contenedor{
 
-    &__grid{
-    display: grid;
-    height: 10rem;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "entrada1 entrada2 entrada2"
-                        "entrada1 entrada3 entrada4"
-                        "entrada5 entrada6 entrada4";
-    }
     &__entrada1{
         grid-area: entrada1;
         border: solid black 1px;
@@ -338,11 +343,10 @@ div{
 
 .entradasBlog {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "entrada1 entrada2 entrada2"
-                        "entrada1 entrada3 entrada4"
-                        "entrada5 entrada6 entrada4";
+    grid-template-areas: "entrada1 entrada2 entrada3"
+                        "entrada4 entrada5 entrada6";
 }
 
 
@@ -558,7 +562,6 @@ input {
     }
 }
   
-
 
 @keyframes shimmy {
     0% {
