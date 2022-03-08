@@ -524,6 +524,10 @@ input {
   color: #424242;
 }
 
+.dropdown-item a {
+  color: black;
+}
+
 /* Media Querys*/
 @media only screen and (max-width: 900px) {
   .menuPrincipal > li {
