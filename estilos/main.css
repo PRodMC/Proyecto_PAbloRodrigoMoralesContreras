@@ -262,7 +262,7 @@ div {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
   line-height: 15px;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .footer__parrafos__padding {
@@ -313,7 +313,7 @@ div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 40vw;
+  width: 30vw;
   padding-bottom: 2rem;
   padding-top: 2rem;
   -webkit-animation: contenedor__presentacion__imagen 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -338,7 +338,6 @@ div {
 
 .contenedor__entrada1 {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: entrada1;
   border: solid black 1px;
@@ -349,7 +348,6 @@ div {
 .contenedor__entrada2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-area: entrada2;
   border: solid black 1px;
   padding: 1rem;
@@ -357,8 +355,8 @@ div {
 }
 
 .contenedor__entrada3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
   grid-area: entrada3;
   border: solid black 1px;
   padding: 1rem;
@@ -367,8 +365,7 @@ div {
 
 .contenedor__entrada4 {
   -ms-grid-row: 2;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 1;
   grid-area: entrada4;
   border: solid black 1px;
   padding: 1rem;
@@ -376,8 +373,8 @@ div {
 }
 
 .contenedor__entrada5 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
   grid-area: entrada5;
   border: solid black 1px;
   padding: 1rem;
@@ -385,8 +382,8 @@ div {
 }
 
 .contenedor__entrada6 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: entrada6;
   border: solid black 1px;
   padding: 1rem;
@@ -396,11 +393,11 @@ div {
 .entradasBlog {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "entrada1 entrada2 entrada2" "entrada1 entrada3 entrada4" "entrada5 entrada6 entrada4";
+      grid-template-areas: "entrada1 entrada2 entrada3" "entrada4 entrada5 entrada6";
 }
 
 .container {
@@ -524,7 +521,24 @@ input {
   color: #424242;
 }
 
+.dropdown-item a {
+  color: #333333;
+}
+
 /* Media Querys*/
+@media only screen and (max-width: 1000px) {
+  .contenedor__presentacion__parrafo {
+    width: 100%;
+  }
+  .contenedor__presentacion__imagen {
+    width: 100%;
+  }
+  .servicios__imagenes {
+    width: 40%;
+    margin: 1rem 0rem;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .menuPrincipal > li {
     display: block;
@@ -559,12 +573,6 @@ input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .contenedor__presentacion__parrafo {
-    width: 100%;
-  }
-  .contenedor__presentacion__imagen {
-    width: 100%;
   }
 }
 
