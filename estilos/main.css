@@ -235,18 +235,6 @@ div {
   transition: all 1s;
 }
 
-.servicios:hover {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transform: scale(1.15, 1.15);
-          transform: scale(1.15, 1.15);
-  opacity: 1;
-}
-
-.servicios:hover span {
-  opacity: 0;
-}
-
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;

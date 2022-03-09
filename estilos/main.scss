@@ -216,15 +216,6 @@ div{
     }
 
 
-      &:hover{
-        backface-visibility: hidden;
-        transform: scale(1.15, 1.15);
-        opacity: 1;
-        
-        span{
-          opacity: 0;
-        }
-    }
 }
 
 
